@@ -4,7 +4,7 @@ position: Senior Algorithm Engineer
 organization: Alibaba
 personal-page: https://dian.host
 order: 1
-img: assets/img/dian-chen.jpg
+img: assets/img/dian-chen-avator.jpg
 content-title: <nobr> This is a placeholder </nobr>
 
 content-speak: 
