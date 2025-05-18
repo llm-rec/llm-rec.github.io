@@ -19,7 +19,7 @@ Paper Submissions Deadline: February x, 2025 (11:59 PM, AoE)
 Acceptance Notification: March x, 2025 (11:59 PM, AoE)
 Workshop Date: May x, 2025
 
-## Workshop Organizers:
+## Workshop Organizers
 
 TBD.
 
