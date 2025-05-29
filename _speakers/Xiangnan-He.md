@@ -1,6 +1,6 @@
 ---
 name: Xiangnan He
-position: Senior Algorithm Engineer
+position: Professor and Vice Dean
 organization: USTC
 personal-page: https://dian.host
 order: 2

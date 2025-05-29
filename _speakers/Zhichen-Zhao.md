@@ -1,6 +1,6 @@
 ---
 name: Zhichen Zhao
-position: 
+position: Senior Tech Leader
 organization: Douyin
 personal-page: 
 order: 5

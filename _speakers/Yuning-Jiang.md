@@ -1,6 +1,6 @@
 ---
 name: Yuning Jiang
-position: 
+position: Senior Algorithm Engineer
 organization: Alibaba
 personal-page: 
 order: 1

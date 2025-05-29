@@ -1,6 +1,6 @@
 ---
 name: Jiebo Luo
-position: 
+position: Researcher
 organization: University of Rochester
 personal-page: 
 order: 6

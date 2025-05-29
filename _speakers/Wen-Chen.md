@@ -1,6 +1,6 @@
 ---
 name: Wen Chen
-position: 
+position: Senior Algorithm Engineer
 organization: Alibaba
 personal-page: 
 order: 7

@@ -1,6 +1,6 @@
 ---
 name: Rui Li
-position: 
+position: Principal Engineer
 organization: Meta
 personal-page: 
 order: 4

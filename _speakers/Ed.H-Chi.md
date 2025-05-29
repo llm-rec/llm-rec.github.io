@@ -1,6 +1,6 @@
 ---
 name: Ed H. Chi
-position: 
+position: Vice President of Research
 organization: Google DeepMind
 personal-page: 
 order: 3
