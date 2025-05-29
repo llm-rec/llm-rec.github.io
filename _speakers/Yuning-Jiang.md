@@ -5,9 +5,9 @@ organization: Alibaba
 personal-page: 
 order: 1
 img: 
-content-title: <nobr> This is a content-title placeholder </nobr>
+content-title: <nobr> Speech Title is TBD. </nobr>
 
-content-speak: 
+content-speak: TBD
 
 bio: <b> Yuning Jiang </b> is a .
 ---
