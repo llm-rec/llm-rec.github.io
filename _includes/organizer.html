@@ -6,42 +6,25 @@
                 <!--h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-2"> &nbsp;</div>
-            
-            {% assign organizers = site.organizers | sort:"order" %}
-            {% for member in organizers %}
-                {% include organizer-member.html %}
-            {% endfor %}
-
-            <div class="col-sm-1">
-                &nbsp;
-            </div>
-
-        </div>
+        
+        {% assign organizers = site.organizers | sort:"order" %}
+        {% for member in organizers %}
+            {% include organizer-member.html %}
+        {% endfor %}
 
         <style>
-        .avatar-crop {
-            position: relative;
-            width: 160px;   /* 最终显示宽度 */
-            height: 160px;  /* 最终显示高度 */
-            margin: 0 auto; /* 居中显示 */
-            overflow: hidden; /* 隐藏超出部分 */
-            border-radius: 50%; /* 保持圆形效果 */
+        .image-container {
+            width: 180; /* 固定宽度 */
+            height: 160px; /* 固定高度 */
+            overflow: hidden; /* 使溢出的部分不可见 */
+            border-radius: 50%; /* 圆形效果 */
         }
 
-        .avatar-crop img {
-            position: absolute;
-            /* 核心裁剪逻辑：居中并保持最小边覆盖 */
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            /* 根据图片方向自适应 */
-            width: auto;
-            height: auto;
-            min-width: 100%;
-            min-height: 100%;
+        .image-container img {
+            width: 100%; /* 图片宽度填满容器宽度 */
+            height: 100%; /* 图片高度填满容器高度 */
+            object-fit: cover; /* 使图片覆盖容器 */
+            object-position: center; /* 使裁剪从中心开始 */
         }
         </style>
 
