@@ -9,17 +9,11 @@
 
         <div class="row">
             <div class="col-sm-2"> &nbsp;</div>
-
-            <div class="col-sm-2">
-                <div class="team-member">
-                    <img src="assets/img/dian-chen.jpg" class="img-responsive img-circle" alt="" width="600"
-                        height="600">
-                    <h4><a href="https://okcd00.github.io/">Dr. Dian Chen</a></h4>
-                    <p class="text-muted">Ph.D</p>
-                    <p class="text-muted">Alibaba</p>
-                </div>
-            </div>
-
+            
+            {% assign organizers = site.organizers | sort:"order" %}
+            {% for member in organizers %}
+                {% include organizers-member.html %}
+            {% endfor %}
 
             <div class="col-sm-1">
                 &nbsp;

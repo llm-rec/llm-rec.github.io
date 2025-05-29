@@ -1,9 +1,10 @@
 ---
-name: Dr. Dian Chen 
+name: Dian Chen 
 position: Ph.D
 organization: Alibaba
-img: assets/img/Dian-Chen.jpg
+email: joshua.cd@alibaba-inc.com
+img: assets/img/dian-chen.jpg
 personal-page: https://dian.host/
-order: 0
+order: 2
 row: 1
 ---
