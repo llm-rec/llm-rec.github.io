@@ -7,8 +7,12 @@
             </div>
         </div>
 
-        {% assign grouped_organizers = site.organizers | group_by: "row" %}
+        {% assign sorted_organizers = site.organizers | sort: "row" %}
+        {% assign grouped_organizers = sorted_organizers | group_by: "role" %}
         {% for group in grouped_organizers %}
+            <div class="row">
+                <div class="col-12"><h3>Row: {{ group.name }}</h3></div>
+            </div>
             <div class="row">
                 {% assign sorted_organizers = group.items | sort: "order" %}
                 {% for member in sorted_organizers %}
@@ -19,7 +23,7 @@
 
         <style>
         .image-container {
-            width: 180; /* 固定宽度 */
+            width: 180px; /* 固定宽度 */
             height: 160px; /* 固定高度 */
             overflow: hidden; /* 使溢出的部分不可见 */
             border-radius: 50%; /* 圆形效果 */

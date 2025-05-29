@@ -1,6 +1,7 @@
 ---
 name: Jian Wu
-position: PC for People and Diversity
+position: Senior Algorithm Engineer
+role: PC for People and Diversity
 organization: Alibaba
 email: joshuawu.wujian@alibaba-inc.com
 img: assets/img/jian-wu.png
