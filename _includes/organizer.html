@@ -6,10 +6,15 @@
                 <!--h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
             </div>
         </div>
-        
-        {% assign organizers = site.organizers | sort:"order" %}
-        {% for member in organizers %}
-            {% include organizer-member.html %}
+
+        {% assign grouped_organizers = site.organizers | group_by: "row" %}
+        {% for group in grouped_organizers %}
+            <div class="row">
+                {% assign sorted_organizers = group.items | sort: "order" %}
+                {% for member in sorted_organizers %}
+                    {% include organizer-member.html %}
+                {% endfor %}
+            </div>
         {% endfor %}
 
         <style>
