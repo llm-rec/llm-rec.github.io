@@ -1,6 +1,6 @@
 ---
 name: Yeqiu Yang
-position: Algorithm Engineer
+position: Senior Algorithm Engineer
 organization: Alibaba
 email: yangyeqiu.yyq@alibaba-inc.com
 img: assets/img/yeqiu-yang.png

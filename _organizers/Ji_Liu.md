@@ -1,6 +1,6 @@
 ---
 name: Ji Liu
-position: Researcher 
+position: Research Scientist 
 organization: Meta
 email: ji.liu.uwisc@gmail.com
 img: assets/img/ji-liu.png

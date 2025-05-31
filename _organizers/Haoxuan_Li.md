@@ -1,6 +1,6 @@
 ---
 name: Haoxuan Li
-position: Research Fellow
+position: Research Scientist
 organization: Tsinghua-UvA Joint Research Center for Logic, Tsinghua University
 email: hxli@stu.pku.edu.cn
 img:

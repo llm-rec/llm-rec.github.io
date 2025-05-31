@@ -1,6 +1,6 @@
 ---
 name: Lina Yao
-position: Senior Principal Research Scientist
+position: Professor
 organization: University of New South Wales
 email: lina.yao@unsw.edu.au
 img: assets/img/lina-yao.png
