@@ -6,45 +6,58 @@
             </div>
         </div>
 
-        {% assign organizers_with_lastname = site.organizers | sort: 'name' %}
-        {% assign organizers_with_lastname = organizers_with_lastname | sort_natural: "name" %}
+        {% assign ordered_names = page.organizer_order %}
+        {% assign sorted_organizers = "" | split: "" %}
 
-        {% assign sorted_organizers = organizers_with_lastname | sort: "last_name_temp" %}
-
-        {% assign sorted_organizers = site.organizers | sort: "name" %}
-        {% capture sorted_array %}
-        {% for organizer in sorted_organizers %}
-        {% assign name_parts = organizer.name | split: ' ' %}
-        {% assign last_name = name_parts | last %}
-        {{ last_name }}|{{ organizer.url }}|{{ organizer.name }}
-        {% unless forloop.last %},{% endunless %}
+        {% for organizer_name in ordered_names %}
+          {% for organizer in site.organizers %}
+            {% if organizer.name == organizer_name %}
+              {% assign sorted_organizers = sorted_organizers | push: organizer %}
+            {% endif %}
+          {% endfor %}
         {% endfor %}
-        {% endcapture %}
-        {% assign sorted_array = sorted_array | split: ',' | sort %}
 
-        <div class="row">
-            {% for item in sorted_array %}
-            {% assign parts = item | split: '|' %}
-            {% assign member = site.organizers | where: "url", parts[1] | first %}
-            {% include organizer-member.html %}
-            {% endfor %}
-        </div>
+        {% assign member_counter = 0 %}
+
+        {% for member in sorted_organizers %}
+            {% if member_counter == 0 %}
+                <div class="row">
+            {% endif %}
+
+            <div class="col-sm-2">
+                {% include organizer-member.html member=member %}
+            </div>
+
+            {% assign member_counter = member_counter | plus: 1 %}
+
+            {% if member_counter == 6 %}
+                </div>
+                {% assign member_counter = 0 %}
+            {% endif %}
+        {% endfor %}
+
+        {% if member_counter != 0 %}
+            </div>
+        {% endif %}
 
         <style>
             .image-container {
                 width: 160px;
-                height: 200px;
+                height: 160px;
                 overflow: hidden;
                 border-radius: 50%;
+                margin: auto;
             }
-
             .image-container img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
             }
+            .team-member {
+                margin-bottom: 20px;
+                text-align: center;
+            }
         </style>
-
     </div>
 </section>

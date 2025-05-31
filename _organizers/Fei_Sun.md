@@ -1,5 +1,5 @@
 ---
-name: Sun Fei
+name: Fei Sun
 position: Associate Professor
 organization: Chinese Academy of Sciences
 email: ofey.sunfei@gmail.com
