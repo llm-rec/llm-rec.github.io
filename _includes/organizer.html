@@ -2,39 +2,48 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center" style="padding-bottom: 20px;">
-                <h2 class="section-heading">Workshop Organizers </h2>
-                <!--h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
+                <h2 class="section-heading">Workshop Organizers</h2>
             </div>
         </div>
 
-        {% assign sorted_organizers = site.organizers | sort: "row" %}
-        {% assign grouped_organizers = sorted_organizers | group_by: "role" %}
-        {% for group in grouped_organizers %}
-            <div class="row">
-                <div class="col-12"><h3>{{ group.name }}</h3></div>
-            </div>
-            <div class="row">
-                {% assign sorted_organizers = group.items | sort: "order" %}
-                {% for member in sorted_organizers %}
-                    {% include organizer-member.html %}
-                {% endfor %}
-            </div>
+        {% assign organizers_with_lastname = site.organizers | sort: 'name' %}
+        {% assign organizers_with_lastname = organizers_with_lastname | sort_natural: "name" %}
+
+        {% assign sorted_organizers = organizers_with_lastname | sort: "last_name_temp" %}
+
+        {% assign sorted_organizers = site.organizers | sort: "name" %}
+        {% capture sorted_array %}
+        {% for organizer in sorted_organizers %}
+        {% assign name_parts = organizer.name | split: ' ' %}
+        {% assign last_name = name_parts | last %}
+        {{ last_name }}|{{ organizer.url }}|{{ organizer.name }}
+        {% unless forloop.last %},{% endunless %}
         {% endfor %}
+        {% endcapture %}
+        {% assign sorted_array = sorted_array | split: ',' | sort %}
+
+        <div class="row">
+            {% for item in sorted_array %}
+            {% assign parts = item | split: '|' %}
+            {% assign member = site.organizers | where: "url", parts[1] | first %}
+            {% include organizer-member.html %}
+            {% endfor %}
+        </div>
 
         <style>
-        .image-container {
-            width: 160px; /* 固定宽度 */
-            height: 200px; /* 固定高度 */
-            overflow: hidden; /* 使溢出的部分不可见 */
-            border-radius: 50%; /* 圆形效果 */
-        }
+            .image-container {
+                width: 160px;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 50%;
+            }
 
-        .image-container img {
-            width: 100%; /* 图片宽度填满容器宽度 */
-            height: 100%; /* 图片高度填满容器高度 */
-            object-fit: cover; /* 使图片覆盖容器 */
-            object-position: center; /* 使裁剪从中心开始 */
-        }
+            .image-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
         </style>
 
     </div>
