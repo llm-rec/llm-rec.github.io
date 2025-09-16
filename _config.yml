@@ -3,10 +3,10 @@ description: Cayman is a clean, responsive theme for GitHub Pages.
 show_downloads: false
 theme: jekyll-theme-cayman
 
-conference_name: The 1st Workshop on the Next-Generation Recommender Systems and LLMs
-conference_www: "on the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS'25)"
-conference_venue: "San Diego Convention Center"
-conference_intro: "December 6 or 7, 2025, 8:15 AM - 5:15 PM"
+conference_name: The Workshop on the Next-Generation Recommender Systems and LLMs
+conference_www: "The 19th ACM International Conference on Web Search and Data Mining (WSDM 2026)"
+conference_venue: "Boise, Idaho, USA"
+conference_intro: "February 26, 2026, 9:00 AM - 5:00 PM"
 
 github:
   zip_url: http://www.google.com

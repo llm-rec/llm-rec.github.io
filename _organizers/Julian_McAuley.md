@@ -1,7 +1,7 @@
 ---
 name: Julian McAuley
 position: Professor
-organization: University of California, San Diego (UCSD)
+organization: University of California, San Diego
 email: ude.dscu.gne@yeluacmj
 img: assets/img/julian-mcauley.png
 personal-page: 
