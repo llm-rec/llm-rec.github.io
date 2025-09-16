@@ -4,7 +4,7 @@ position: Principal Engineer
 organization: Meta
 personal-page: https://scholar.google.com.hk/citations?hl=zh-CN&user=m2bfcScAAAAJ&view_op=list_works&sortby=pubdate
 order: 4
-img: assets/img/default.jpeg
+img: assets/img/lirui.jpg
 content-title: <nobr> Speech Title is TBD. </nobr>
 
 content-speak: TBD
