@@ -4,7 +4,7 @@ position: Senior Algorithm Engineer
 organization: Alibaba
 personal-page: 
 order: 7
-img: 
+img: assets/img/chenwen.png
 content-title: <nobr> Speech Title is TBD. </nobr>
 
 content-speak: TBD

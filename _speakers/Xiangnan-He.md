@@ -2,9 +2,9 @@
 name: Xiangnan He
 position: Professor and Vice Dean
 organization: USTC
-personal-page: https://dian.host
+personal-page: https://hexiangnan.github.io/
 order: 2
-img: 
+img: assets/img/xiangnan-he.jpg
 content-title: <nobr> Speech Title is TBD. </nobr>
 
 content-speak: TBD

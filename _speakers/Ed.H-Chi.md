@@ -2,9 +2,9 @@
 name: Ed H. Chi
 position: Vice President of Research
 organization: Google DeepMind
-personal-page: 
+personal-page: https://www.edchi.net/
 order: 3
-img: 
+img: assets/img/edh.jpg
 content-title: <nobr> Speech Title is TBD. </nobr>
 
 content-speak: TBD

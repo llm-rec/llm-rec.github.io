@@ -2,7 +2,7 @@
 name: Zhichen Zhao
 position: Senior Tech Leader
 organization: Douyin
-personal-page: 
+personal-page: https://scholar.google.com/citations?user=43UpnPUAAAAJ&hl=zh-CN
 order: 5
 img: 
 content-title: <nobr> Speech Title is TBD. </nobr>
