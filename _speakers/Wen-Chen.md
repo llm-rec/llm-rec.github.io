@@ -2,7 +2,7 @@
 name: Wen Chen
 position: Senior Algorithm Engineer
 organization: Alibaba
-personal-page: 
+personal-page: https://openreview.net/profile?id=~Wen_Chen9
 order: 7
 img: assets/img/chenwen.png
 content-title: <nobr> Speech Title is TBD. </nobr>

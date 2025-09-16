@@ -4,7 +4,7 @@ position: Senior Tech Leader
 organization: Douyin
 personal-page: https://scholar.google.com/citations?user=43UpnPUAAAAJ&hl=zh-CN
 order: 5
-img: 
+img: assets/img/zhicheng-zhao.jpg
 content-title: <nobr> Speech Title is TBD. </nobr>
 
 content-speak: TBD

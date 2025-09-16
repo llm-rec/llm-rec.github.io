@@ -1,7 +1,7 @@
 ---
 name: Xiangnan He
 position: Professor and Vice Dean
-organization: USTC
+organization: University of Science and Technology of China
 personal-page: https://hexiangnan.github.io/
 order: 2
 img: assets/img/xiangnan-he.jpg
