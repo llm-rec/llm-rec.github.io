@@ -1,8 +1,7 @@
 <div class="team-member">
     <div class="image-container">
-        <img src="{{ member.img | default: 'assets/img/default.jpeg' }}" 
-             class="img-responsive img-circle" 
-             alt="{{ member.name }}">
+        <img src="{{ member.img | default: 'assets/img/default.jpeg' }}" class="img-responsive img-circle"
+            alt="{{ member.name }}">
     </div>
     <h4>
         <a href="{{ member.personal-page | default: 'https://llm-rec.github.io/' }}">{{ member.name }}</a>

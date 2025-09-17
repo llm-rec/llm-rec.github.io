@@ -10,18 +10,18 @@
         {% assign sorted_organizers = "" | split: "" %}
 
         {% for organizer_name in ordered_names %}
-          {% for organizer in site.organizers %}
-            {% if organizer.name == organizer_name %}
-              {% assign sorted_organizers = sorted_organizers | push: organizer %}
-            {% endif %}
-          {% endfor %}
+        {% for organizer in site.organizers %}
+        {% if organizer.name == organizer_name %}
+        {% assign sorted_organizers = sorted_organizers | push: organizer %}
+        {% endif %}
+        {% endfor %}
         {% endfor %}
 
         {% assign member_counter = 0 %}
 
         {% for member in sorted_organizers %}
-            {% if member_counter == 0 %}
-                <div class="row">
+        {% if member_counter == 0 %}
+        <div class="row">
             {% endif %}
 
             <div class="col-sm-2">
@@ -31,33 +31,35 @@
             {% assign member_counter = member_counter | plus: 1 %}
 
             {% if member_counter == 6 %}
-                </div>
-                {% assign member_counter = 0 %}
-            {% endif %}
+        </div>
+        {% assign member_counter = 0 %}
+        {% endif %}
         {% endfor %}
 
         {% if member_counter != 0 %}
-            </div>
-        {% endif %}
+    </div>
+    {% endif %}
 
-        <style>
-            .image-container {
-                width: 160px;
-                height: 160px;
-                overflow: hidden;
-                border-radius: 50%;
-                margin: auto;
-            }
-            .image-container img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-            .team-member {
-                margin-bottom: 20px;
-                text-align: center;
-            }
-        </style>
+    <style>
+        .image-container {
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
     </div>
 </section>
